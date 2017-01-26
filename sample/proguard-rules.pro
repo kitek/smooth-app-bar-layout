@@ -26,3 +26,5 @@
 -keepclasseswithmembernames class * {
     @butterknife.* <methods>;
 }
+-dontnote android.net.http.**
+-dontnote org.apache.http.**

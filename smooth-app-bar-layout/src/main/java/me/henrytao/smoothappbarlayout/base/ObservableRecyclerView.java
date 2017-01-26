@@ -80,7 +80,7 @@ public class ObservableRecyclerView implements Observer {
   }
 
   private void onAdapterChanged() {
-    if (mOnScrollListener != null) {
+    if (mOnScrollListener != null && mRecyclerView.getLayoutManager() != null) {
       mOnScrollListener.onScrollChanged(mRecyclerView,
           mRecyclerView.computeHorizontalScrollOffset(), mRecyclerView.computeVerticalScrollOffset(),
           0, 0,
